@@ -1,2 +1,15 @@
 git config --global user.name "potasio101"
 git config --global user.email "potasio.acc@gmail.com"
+
+pip install fastapi uvicorn sqlalchemy asyncpg psycopg2-binary python-dotenv pydantic
+
+scim_client/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # FastAPI app entry point
+│   ├── models.py        # SQLAlchemy models
+│   ├── database.py      # DB connection setup
+│   └── config.py        # Load env variables (e.g. DB URL)
+├── .env                 # DB credentials, secrets
+├── requirements.txt
+
